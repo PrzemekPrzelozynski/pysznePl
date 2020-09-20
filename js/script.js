@@ -84,12 +84,37 @@ function takeOrder() {
     const tel = document.getElementById('tel').value
     order.tel = tel
     // pobieram adress
-    const adress = document.getElementById('adress')
+    const adress = document.getElementById('adress').value
     order.adress = adress
     // pobieram textarea 
     const msg = document.getElementById('msg').value
     order.text = msg
     console.log("takeOrder -> nameC", order)
+
+    const pizzaSelect = document.getElementById("pizza").value
+if(pizzaSelect == "0") {
+    alert("wybierz pizze")
+}
+else{
+    order.pizza = pizzaSelect
+}
+if(order.adress !== '' && order.email !== '' &&
+order.name !== '' && order.napoje.length > 0 &&
+order.sosy.length > 0 && order.tel !== '') {
+    console.log(order)
+}else{
+    alert('Uzupelnij zamowienie')
+}
+order = {
+    pizza: '',
+    sosy: [],
+    name: '',
+    adress: '',
+    email: '',
+    tel: '',
+    text: '',
+    napoje: []
+}
 }
 // function odejmowanie() {
 //     console.log(1 == "1")
@@ -107,3 +132,6 @@ function takeOrder() {
 // dodawanie(7, 1885)
 // dodawanie(5, 88)
 // dodawanie(7, 7)
+
+// pobieranie selecta 
+
