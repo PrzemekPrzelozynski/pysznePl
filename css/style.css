@@ -1,0 +1,19 @@
+body {
+    background-color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    
+}
+.all-view{
+    width: 50%;
+    margin: 20px auto;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.margin-bottom{
+    margin-bottom: 10px;
+}
+#pizza {
+    margin-top: 10px;
+}
